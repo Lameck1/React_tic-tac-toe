@@ -31,7 +31,9 @@ const Game = () => {
             cells={current.cells}
             onClick={(index) => dispatch(play(index))}
           />
-          <button onClick={() => dispatch(reset())}>RESET BOARD</button>
+          <button className="reset-btn" onClick={() => dispatch(reset())}>
+            RESET GAME
+          </button>
         </div>
         <div className="game-info">
           <div className="status">{status}</div>
