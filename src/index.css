@@ -8,6 +8,11 @@ ul {
   padding-left: 30px;
 }
 
+.app {
+  display: flex;
+  justify-content: center;
+}
+
 .board-row:after {
   clear: both;
   content: '';
@@ -57,4 +62,9 @@ form {
 
 form > label {
   margin-bottom: 5px;
+}
+
+.reset-btn,
+li {
+  margin-top: 10px;
 }
