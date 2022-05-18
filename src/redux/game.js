@@ -83,6 +83,11 @@ const gameSlice = createSlice({
       state.xIsNext = true;
       state.draw = false;
       state.winner = null;
+      state.status =
+        'Next player: ' +
+        (state.xIsNext
+          ? state.players[0].X + ' - X '
+          : state.players[0].O + ' - O ');
     },
     getPlayers: (state, action) => {
       state.players = action.payload;
